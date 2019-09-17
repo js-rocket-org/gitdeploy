@@ -1,0 +1,3 @@
+#!/bin/sh
+DEPLOY_DIR=/home/user/deploy/my_project #CHANGE
+ssh -i $DEPLOY_DIR/id_rsa -o StrictHostKeyChecking=yes -o UserKnownHostsFile=$DEPLOY_DIR/known_hosts $*
