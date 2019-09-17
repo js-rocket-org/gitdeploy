@@ -1,0 +1,5 @@
+#!/bin/sh
+PROJECT_DIR=/home/user/websites/my_project #CHANGE
+DEPLOY_DIR=/home/user/deploy/my_project #CHANGE
+cd $PROJECT_DIR
+GIT_SSH="$DEPLOY_DIR/altssh" git $*
